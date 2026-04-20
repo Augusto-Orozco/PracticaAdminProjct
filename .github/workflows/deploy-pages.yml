@@ -42,7 +42,7 @@ jobs:
           VITE_PUBLIC_VERSION: ${{ github.sha }}
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
 
-          VITE_APP_NAME: SecretsApp
+          VITE_APP_NAME: Gestión profesional de configuración y secretos
           VITE_PORT: "3000"
           VITE_NODE_ENV: development
           VITE_LOG_LEVEL: debug
@@ -61,7 +61,7 @@ jobs:
           VITE_PUBLIC_VERSION: ${{ github.sha }}
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
 
-          VITE_APP_NAME: SecretsApp
+          VITE_APP_NAME: Gestión profesional de configuración y secretos
           VITE_PORT: "3000"
           VITE_NODE_ENV: production
           VITE_LOG_LEVEL: info
@@ -111,7 +111,7 @@ jobs:
           VITE_PUBLIC_VERSION: ${{ github.sha }}
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
 
-          VITE_APP_NAME: SecretsApp
+          VITE_APP_NAME: Gestión profesional de configuración y secretos
           VITE_PORT: "3000"
           VITE_NODE_ENV: production
           VITE_LOG_LEVEL: info
