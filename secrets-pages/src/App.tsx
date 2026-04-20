@@ -12,8 +12,8 @@ const apiKey = import.meta.env.VITE_API_KEY;
 const jwtSecret = import.meta.env.VITE_JWT_SECRET;
 const dbPassword = import.meta.env.VITE_DB_PASSWORD;
 
-const mask = (value: string | undefined) =>
-  value ? value.slice(0, 3) + "****" : "not set";
+const mask = (value?: string) =>
+  value ? "********" : "not set";
 
 const notes = [
   "Configuración mediante variables de entorno",
@@ -50,7 +50,6 @@ export default function App() {
         <article className="card">
           <h2>Build Info</h2>
           <p className="mono">{version}</p>
-          <p>Identificador del commit desplegado</p>
         </article>
 
         {/* SECRETS (OCULTOS) */}
@@ -59,9 +58,6 @@ export default function App() {
           <p><strong>API KEY:</strong> {mask(apiKey)}</p>
           <p><strong>JWT:</strong> {mask(jwtSecret)}</p>
           <p><strong>DB PASS:</strong> {mask(dbPassword)}</p>
-          <p style={{ fontSize: "0.8rem", opacity: 0.7 }}>
-            (Los valores reales nunca se exponen)
-          </p>
         </article>
 
         {/* NOTES */}
