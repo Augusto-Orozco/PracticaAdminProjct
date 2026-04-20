@@ -29,6 +29,7 @@ body {
 
 .hero {
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .eyebrow {
@@ -51,6 +52,7 @@ h1 {
 
 .hero-copy {
   max-width: 720px;
+  text-align: center;
   color: #cbd5e1;
   font-size: 1.05rem;
 }

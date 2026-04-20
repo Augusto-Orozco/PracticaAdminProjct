@@ -2,6 +2,7 @@
   "name": "secrets-pages",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Augusto-Orozco.github.io/PracticaAdminProjct/",
   "type": "module",
   "scripts": {
     "dev": "vite",

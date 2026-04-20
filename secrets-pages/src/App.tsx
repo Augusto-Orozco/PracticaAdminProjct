@@ -1,6 +1,6 @@
 import "./styles.css";
 
-const environment = import.meta.env.VITE_NODE_ENV || "unknown";
+const environment = import.meta.env.MODE
 const version = import.meta.env.VITE_PUBLIC_VERSION || "dev";
 const appName = import.meta.env.VITE_APP_NAME || "Gestión profesional de configuración y secretos";
 const port = import.meta.env.VITE_PORT || "N/A";
@@ -29,9 +29,6 @@ export default function App() {
       <section className="hero">
         <p className="eyebrow">Actividad 4</p>
         <h1>{appName}</h1>
-        <p className="hero-copy">
-          Aplicación demostrando gestión de configuración y secretos usando variables de entorno.
-        </p>
       </section>
 
       <section className="grid">
