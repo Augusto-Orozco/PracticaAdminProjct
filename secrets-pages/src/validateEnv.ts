@@ -16,7 +16,7 @@ export function validateEnv() {
   });
 
   if (missing.length > 0) {
-    console.error("❌ Missing env variables:", missing);
+    console.error("Missing env variables:", missing);
 
     // ⚠️ NO romper nunca en browser
     if (import.meta.env.DEV) {
@@ -26,8 +26,8 @@ export function validateEnv() {
   }
 
   if (env.VITE_PORT && isNaN(Number(env.VITE_PORT))) {
-    console.warn("⚠️ PORT inválido");
+    console.warn("PORT inválido");
   }
 
-  console.log("✅ Env check complete");
+  console.log("Env check complete");
 }
