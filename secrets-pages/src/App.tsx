@@ -49,7 +49,7 @@ export default function App() {
         {/* BUILD INFO */}
         <article className="card">
           <h2>Build Info</h2>
-          <p className="mono">{version}</p>
+          <p className="mono">{version.slice(0, 7)}</p>
         </article>
 
         {/* SECRETS (OCULTOS) */}
