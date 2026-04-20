@@ -18,7 +18,7 @@ export function validateEnv() {
   if (missing.length > 0) {
     console.error("Missing env variables:", missing);
 
-    // ⚠️ NO romper nunca en browser
+    // NO romper nunca en browser
     if (import.meta.env.DEV) {
       // Solo loggear
       console.warn("DEV mode - missing env");
