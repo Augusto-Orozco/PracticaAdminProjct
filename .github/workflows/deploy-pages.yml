@@ -47,9 +47,9 @@ jobs:
           VITE_NODE_ENV: development
           VITE_LOG_LEVEL: debug
           VITE_FEATURE_X_ENABLED: "true"
-          VITE_API_KEY: test
-          VITE_JWT_SECRET: test
-          VITE_DB_PASSWORD: test
+          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
+          VITE_JWT_SECRET: ${{ secrets.VITE_JWT_SECRET }}
+          VITE_DB_PASSWORD: ${{ secrets.VITE_DB_PASSWORD }}
 
       # BUILD STAGING
       - name: Build staging site
@@ -66,9 +66,9 @@ jobs:
           VITE_NODE_ENV: production
           VITE_LOG_LEVEL: info
           VITE_FEATURE_X_ENABLED: "true"
-          VITE_API_KEY: test
-          VITE_JWT_SECRET: test
-          VITE_DB_PASSWORD: test
+          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
+          VITE_JWT_SECRET: ${{ secrets.VITE_JWT_SECRET }}
+          VITE_DB_PASSWORD: ${{ secrets.VITE_DB_PASSWORD }}
 
       # ARTEFACTO DEVELOP
       - name: Upload preview artifact for develop
@@ -116,9 +116,9 @@ jobs:
           VITE_NODE_ENV: production
           VITE_LOG_LEVEL: info
           VITE_FEATURE_X_ENABLED: "true"
-          VITE_API_KEY: test
-          VITE_JWT_SECRET: test
-          VITE_DB_PASSWORD: test
+          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
+          VITE_JWT_SECRET: ${{ secrets.VITE_JWT_SECRET }}
+          VITE_DB_PASSWORD: ${{ secrets.VITE_DB_PASSWORD }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
